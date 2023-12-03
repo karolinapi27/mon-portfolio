@@ -1,0 +1,21 @@
+// Banner.module.scss
+@import '../../Styles/mixins';
+
+.bannerContainer {
+    @include pageMargins;
+    border-radius: 25px;
+    height: 223px;
+    background: #000;
+    mix-blend-mode: darken; 
+    background-position: center;
+    display: flex;        
+    align-items: center; 
+    justify-content: center;
+}
+  
+  .bannerText {
+    font-size: 48px;
+    color:white;
+    line-height: 142.6%;
+  }
+  

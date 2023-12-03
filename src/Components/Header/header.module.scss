@@ -1,0 +1,29 @@
+// Header
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.header {
+    @include pageMargins;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 50px;
+
+    & .logo {
+        width: 210.322px;
+        height: 68px;
+        flex-shrink: 0;
+    }
+
+    & ul {
+        display: flex;
+        gap: 57px;
+        list-style: none;
+
+        & li a {
+            font-size: 24px;
+            text-decoration: none;
+            color: #FF6060;
+        }
+    }
+}
