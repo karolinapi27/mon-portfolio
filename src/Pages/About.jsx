@@ -1,10 +1,15 @@
 import React from 'react';
+import Banner from '../Components/Banner/Banner'; 
 
 const About = () => {
     return (
         <div>
-            <h1>À propos</h1>
-        </div>
+      <Banner
+        imageUrl="./Images/imageHomeBannner.png"
+        text="Chez vous, partout et ailleurs"
+      />
+      
+    </div>
     );
 };
 

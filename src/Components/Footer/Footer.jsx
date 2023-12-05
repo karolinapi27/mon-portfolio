@@ -1,9 +1,11 @@
 import React from 'react';
+import styles from './footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer>
-      <p>© 2023 Votre Société. Tous droits réservés.</p>
+    <footer className={styles.footer}>
+      <img src="/footerLogo.png" alt="Logo Kasa" className={styles.logo} />
+      <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 };

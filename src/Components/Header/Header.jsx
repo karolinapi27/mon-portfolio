@@ -1,16 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../Assets/LOGO.svg';
+import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src={logo} alt="Logo Kasa" className={styles.logo} />
+      <img src="/logoKasa.svg" alt="Logo Kasa" className={styles.logo} />
       <nav>
         <ul className={styles.navbar}>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/about">A propos</Link></li>
+          <li><NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" :"")}>Accueil</NavLink></li>
+          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>A propos</NavLink></li>
         </ul>
       </nav>
     </header>

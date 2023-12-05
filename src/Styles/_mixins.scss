@@ -4,3 +4,10 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+
+@mixin banner {
+  border-radius: 25px;
+  opacity: 0.3;
+  background: #000;
+  mix-blend-mode: darken; 
+}

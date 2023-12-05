@@ -3,8 +3,17 @@
 @import 'variables';
 @import '../components/Banner/banner.module';
 @import '../components/Header/header.module';
+@import '../components/Footer/footer.module';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: white;
+  color: #FF6060;
   font-style: normal;
 }

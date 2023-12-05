@@ -1,0 +1,30 @@
+/* Styles.css (exemple) */
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.cardContainer {
+    @include pageMargins;
+    background-color: $grey-background;
+    padding: 56px 50px 56px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .cardGrid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 60px; 
+  }
+  
+  .cardItem {
+    text-align: center;
+  }
+  
+  .cardItem img {
+    max-width: 100%;
+    height: 340px;
+    object-fit: cover;
+  }
+  

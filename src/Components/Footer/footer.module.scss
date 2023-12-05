@@ -1,0 +1,14 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.footer {
+    text-align: center;
+    background-color: black;
+    width: 100vw;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+p {
+    margin-top: 30px;
+    color: white;
+}
