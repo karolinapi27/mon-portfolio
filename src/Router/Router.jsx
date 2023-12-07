@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home"
 import About from "../Pages/About"
 import Apartment from "../Pages/Apartment"
-import Error from "../Pages/Error"
+import Error from "../Pages/ErrorPage/Error"
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 
