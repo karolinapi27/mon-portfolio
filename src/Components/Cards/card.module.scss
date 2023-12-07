@@ -4,8 +4,9 @@
 
 .cardContainer {
     @include pageMargins;
+    border-radius: $radius25;
     background-color: $grey-background;
-    padding: 56px 50px 56px 50px;
+    padding: 56px 50px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -19,12 +20,43 @@
   }
   
   .cardItem {
+    display:block;
+    position: relative;
     text-align: center;
   }
   
   .cardItem img {
-    max-width: 100%;
+    width: 100%;
     height: 340px;
     object-fit: cover;
+    box-shadow: $shadow;
+    border-radius: $radius10;
   }
-  
+
+  .cardTitle  {
+    @include custom-font;
+    color: $secondary-color;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  /* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+
+  .cardContainer {
+    @include responsiveMargins;
+    background-color: $secondary-color;
+    padding: 0;
+  }
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -5,9 +5,20 @@
   margin-right: 100px;
 }
 
+@mixin responsiveMargins {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @mixin banner {
   border-radius: 25px;
   opacity: 0.3;
   background: #000;
   mix-blend-mode: darken; 
+}
+
+@mixin custom-font {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
 }

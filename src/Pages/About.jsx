@@ -5,10 +5,8 @@ const About = () => {
     return (
         <div>
       <Banner
-        imageUrl="./Images/imageHomeBannner.png"
-        text="Chez vous, partout et ailleurs"
+        imageUrl="./imageAboutPage.png"
       />
-      
     </div>
     );
 };

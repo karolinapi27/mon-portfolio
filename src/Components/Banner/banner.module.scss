@@ -1,9 +1,10 @@
 // Banner.module.scss
 @import '../../Styles/mixins';
+@import '../../Styles/variables';
 
 .bannerContainer {
     @include pageMargins;
-    border-radius: 25px;
+    border-radius: $radius25;
     height: 223px;
     background: #000;
     mix-blend-mode: darken; 
@@ -15,7 +16,20 @@
   
   .bannerText {
     font-size: 48px;
-    color:white;
+    color: $secondary-color;
     line-height: 142.6%;
   }
+
+  /* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+  .bannerContainer {
+    @include responsiveMargins;
+    height: 111px; 
+  }
+
+  .bannerText {
+    font-size: 24px;
+  }
+
+}
   

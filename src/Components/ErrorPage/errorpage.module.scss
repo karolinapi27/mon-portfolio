@@ -14,10 +14,12 @@ h1 {
 }
 
 .page-error-text {
+    color: $primary-color;
     text-align: center;
     font-size: 36px; 
 }
 .page-error-text-redirection {
+    color: $primary-color;
     text-align: center;
     font-size: 18px; 
     margin-bottom: 136px;
