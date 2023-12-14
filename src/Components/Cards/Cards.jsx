@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logements } from '../../Utils/api';
-import styles from './card.module.scss';
+import styles from './cards.module.scss';
 
 const Card = () => {
   const data = Logements();

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+.bannerContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 25px;
+  height: 223px;
+  background: #000;
+  mix-blend-mode: darken;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerText {
+  font-size: 48px;
+  color: #FFF;
+  line-height: 142.6%;
+}
+
+/* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+  .bannerContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 111px;
+  }
+  .bannerText {
+    font-size: 24px;
+  }
+}
+.header {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.header .logo {
+  width: 210.322px;
+  height: 68px;
+  flex-shrink: 0;
+}
+.header ul {
+  display: flex;
+  gap: 57px;
+  list-style: none;
+}
+.header ul li a {
+  color: #FF6060;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-active {
+  position: relative;
+}
+.nav-active::after {
+  content: "";
+  position: absolute;
+  background-color: #FF6060;
+  height: 2px;
+  width: 0;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: underline 0.2s ease-in-out forwards;
+  animation: underline 0.2s ease-in-out forwards;
+}
+@-webkit-keyframes underline {
+  to {
+    width: 100%;
+  }
+}
+@keyframes underline {
+  to {
+    width: 100%;
+  }
+}
+
+/* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .header .logo {
+    width: 145px;
+    height: 46.881px;
+    flex-shrink: 0;
+  }
+  .header ul {
+    margin-top: 20px;
+    gap: 26px;
+  }
+  .header li a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+.footer {
+  text-align: center;
+  background-color: black;
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+p {
+  margin-top: 30px;
+  color: white;
+}
+
+.collapse-container {
+  width: 1023px;
+  padding: 10px 20px 10px 15px;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--Red, #FF6060);
+  bottom: -2px;
+}
+
+.collapse-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF6060;
+  color: #FFF;
+  padding: 1rem;
+}
+
+.collapse-title:hover,
+.active .collapse-title {
+  cursor: pointer;
+  background: white;
+}
+
+.collapse-icon {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.collapse-icon::before {
+  position: absolute;
+  content: "";
+  transform: rotate(180deg);
+  transition: all 2s;
+}
+
+.active .collapse-icon::before {
+  transform: rotate(90deg);
+}
+
+.collapse-content {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+
+.carousel.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 470px;
+  position: relative;
+}
+
+.carousel-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow_left {
+  left: 10px;
+}
+
+.arrow_right {
+  right: 10px;
+}
+
+.error-container {
+  display: grid;
+  gap: 136px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 142.6%;
+}
+
+.page-error-text {
+  color: #FF6060;
+  text-align: center;
+  font-size: 36px;
+}
+
+.page-error-text-redirection {
+  color: #FF6060;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 136px;
+  text-decoration: underline;
+}
+
+.Collapse-Container {
+  display: grid;
+  justify-content: center;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  gap: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: white;
+  color: #FF6060;
+  font-style: normal;
+}/*# sourceMappingURL=index.css.map */

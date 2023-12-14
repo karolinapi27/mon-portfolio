@@ -1,0 +1,29 @@
+
+.carousel.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 470px;
+    position: relative;
+  }
+
+  .carousel-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .arrow {
+    position: absolute;
+  }
+    .arrow_left {
+    left: 10px;
+  }
+    .arrow_right {
+    right: 10px;
+  }

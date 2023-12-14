@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.header {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.header .logo {
+  width: 210.322px;
+  height: 68px;
+  flex-shrink: 0;
+}
+.header ul {
+  display: flex;
+  gap: 57px;
+  list-style: none;
+}
+.header ul li a {
+  color: #FF6060;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-active {
+  position: relative;
+}
+.nav-active::after {
+  content: "";
+  position: absolute;
+  background-color: #FF6060;
+  height: 2px;
+  width: 0;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: underline 0.2s ease-in-out forwards;
+  animation: underline 0.2s ease-in-out forwards;
+}
+@-webkit-keyframes underline {
+  to {
+    width: 100%;
+  }
+}
+@keyframes underline {
+  to {
+    width: 100%;
+  }
+}
+
+/* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .header .logo {
+    width: 145px;
+    height: 46.881px;
+    flex-shrink: 0;
+  }
+  .header ul {
+    margin-top: 20px;
+    gap: 26px;
+  }
+  .header li a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=header.module.css.map */

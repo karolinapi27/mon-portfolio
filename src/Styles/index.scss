@@ -4,6 +4,12 @@
 @import '../components/Banner/banner.module';
 @import '../components/Header/header.module';
 @import '../components/Footer/footer.module';
+@import '../Components/Collapse/collapse.module.scss';
+@import '../Components/Slideshow/slideshow.module.scss';
+@import '../Pages/Apartment/apartment.module.scss';
+@import '../Pages/ErrorPage/errorpage.module.scss';
+@import '../Pages/About/about.module.scss';
+
 
 * {
   margin: 0;

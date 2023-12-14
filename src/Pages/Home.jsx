@@ -1,7 +1,7 @@
 // Home.jsx
 import React from 'react';
 import Banner from '../Components/Banner/Banner'; 
-import Card from '../Components/Cards/Card'; 
+import Cards from '../Components/Cards/Cards'; 
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
         imageUrl="./Images/imageHomeBannner.png"
         text="Chez vous, partout et ailleurs"
       />
-      <Card/>
+      <Cards/>
     </div>
   );
 };

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Styles.css (exemple) */
+.cardContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  padding: 56px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cardGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 60px;
+}
+
+.cardItem {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.cardItem img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFF;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+  .cardContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #FFF;
+    padding: 0;
+  }
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=cards.module.css.map */
