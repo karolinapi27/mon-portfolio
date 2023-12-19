@@ -23,11 +23,8 @@
   font-weight: 500;
 }
 
-@mixin collapse-container-styles($width: 1023px, $bottom: -2px) {
-  width: $width;
-  padding: 10px 20px 10px 15px;
+@mixin collapse-container-styles {
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   background: var(--Red, #FF6060);
-  bottom: $bottom;
 }

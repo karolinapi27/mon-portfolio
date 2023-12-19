@@ -1,10 +1,22 @@
 //about.module.scss
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
 
 .Collapse-Container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 38px;
     margin-bottom: 38px;
-    gap: 30px;   
+    gap: 30px; 
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    .Collapse-Container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 19px; 
+    }   
+}

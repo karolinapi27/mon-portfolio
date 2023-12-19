@@ -8,7 +8,27 @@
     padding-top: 60px;
     padding-bottom: 30px;
 }
+
 p {
     margin-top: 30px;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .footer {
+    width: 100%;
+    padding: 66px 120.313px 58px 121.094px; 
+
+    & .logo {
+        width: 122px;
+        height: 39.444px;
+    }
+
+    & p {
+        flex-wrap: wrap;
+        font-size: 12px; 
+        margin-top: 0;
+    }
+    }
 }

@@ -18,10 +18,32 @@ h1 {
     text-align: center;
     font-size: 36px; 
 }
+
 .page-error-text-redirection {
     color: $primary-color;
     text-align: center;
     font-size: 18px; 
     margin-bottom: 136px;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .error-container {
+        gap: 90px;  
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 96px;
+    }
+
+    .page-error-text {
+        font-size: 18px; 
+    }
+
+    .page-error-text-redirection {
+        font-size: 14px; 
+    }
+    
 }

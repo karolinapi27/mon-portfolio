@@ -15,31 +15,31 @@
   padding: 1rem;
 }
 
-.collapse-title:hover,
-.active .collapse-title {
-  cursor: pointer;
-  background: white;
-}
-
 .collapse-icon {
   position: relative;
+  cursor: pointer;
+}
+.collapse-icon img {
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out;
 }
 
-.collapse-icon::before {
-  position: absolute;
-  content: "";
+.collapse-container.active img {
   transform: rotate(180deg);
-  transition: all 2s;
-}
-
-.active .collapse-icon::before {
-  transform: rotate(90deg);
 }
 
 .collapse-content {
-  visibility: hidden;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #F6F6F6;
+  width: 1023px;
   height: 0;
-  opacity: 0;
   overflow: hidden;
-  transition: all 2s ease-in-out;
+  visibility: hidden;
+  transition: height 0.5s ease-in-out, visibility 0.5s;
+}
+.collapse-container.active .collapse-content {
+  visibility: visible;
+  height: 100px;
 }/*# sourceMappingURL=collapse.module.css.map */

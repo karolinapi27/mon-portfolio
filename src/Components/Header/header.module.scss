@@ -21,8 +21,8 @@
         list-style: none;
 
         & li a {
-            color: $primary-color;
             font-size: 24px;
+            color: $primary-color;
             text-decoration: none;
             cursor: pointer;
         }
@@ -54,8 +54,7 @@
             to {
                 width: 100%;
             }
-        }
-    
+        }    
 }
 }
 
@@ -64,23 +63,22 @@
     .header {
         @include responsiveMargins;
         margin-top: 20px;
+        margin-bottom: 20px;
     
         & .logo {
-            width: 145px;
-            height: 46.881px;
+            max-width: 145px;
+            max-height: 46.881px;
             flex-shrink: 0;
         }
 
         & ul {
             margin-top: 20px;
-            gap: 26px;
-        }
+            gap: 20px;
 
-        & li a {
-            font-size: 12px ;
-            text-transform: uppercase;
+            & li a {
+                font-size: 12px;
+                text-transform:uppercase;
+            }
         }
-
     }
-
 }

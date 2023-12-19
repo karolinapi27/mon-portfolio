@@ -1,1 +1,100 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
 
+    .containerMargin {
+        @include pageMargins;
+    }
+
+    .container {
+        background-color: lightgray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 36px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .location {
+        color: #FF6060;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 142.6%; 
+        margin-bottom: 10px;
+    }
+
+    .tags {
+        width: 115px;
+        height: 25px;
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        margin-right: 5px;
+        border-radius: $radius10;
+        background-color:#FF6060;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .hostNameFlex {
+        display: flex;
+        gap: 5px;
+        font-size: 18px;
+    }
+
+    .CollapsePositionFlex {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+    /* Pour les écrans mobiles et tablettes */
+
+    @media only screen and (max-width: 1024px) {
+
+        .containerMargin {
+            @include responsiveMargins;
+        }
+
+        .CollapsePositionFlex {
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        .title {
+            font-size: 18px;
+            margin-top: 0;   
+        }
+
+        .location {
+            
+            font-size: 14px;
+        }
+
+        .picture {
+            width: 32px;
+            height: 32px;
+        }
+
+        .tags {
+            font-size: 10px; 
+        }
+
+        .hostContainer {
+            display: block;
+        }
+
+        .hostNameFlex {
+            font-size: 12px; 
+        }
+    }

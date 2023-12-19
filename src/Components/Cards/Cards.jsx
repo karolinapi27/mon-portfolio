@@ -1,11 +1,11 @@
 //  Card //
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Logements } from '../../Utils/api';
+import  Logements  from '../../Data/logements.json';
 import styles from './cards.module.scss';
 
 const Card = () => {
-  const data = Logements();
+  const data = Logements;
 
   return (
     <div className={styles.cardContainer}>

@@ -1,41 +1,44 @@
 // Carousel.jsx
 import { useState } from "react";
-import styles from './slideshow.module.scss'
+import styles from './slideshow.module.scss';
+import ArrowLeft from '../../Assets/Arrows/Arrow-left.png';
+import ArrowRight from '../../Assets/Arrows/Arrow-right.png';
 
 
-const Carousel = ({ images }) => {
+const Carousel = ({pictures}) => {
+  console.log("Pictures prop:", pictures);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % pictures.length);
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
   };
 
-  const showArrows = images.length > 1; 
+  const showArrows = pictures.length > 1; 
 
   return (
     <div className={styles.carouselContainer}>
+      <img className={styles.carouselImg} src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex + 1}`} />
       {showArrows && (
         <>
           <img
             onClick={prevImage}
-            className={styles.arrow}
-            src="./Assets/Arrows/Arrow-left.png"
+            className={`${styles.arrowLeft} ${styles.arrow}`}
+            src={ArrowLeft}
             alt="Flèche gauche"
           />
-          <p className={styles.slideNumber}>{currentImageIndex + 1}/{images.length}</p>
+          <p className={styles.slideNumber}>{currentImageIndex + 1}/{pictures.length}</p>
           <img
             onClick={nextImage}
-            className={styles.arrow}
-            src="./Assets/Arrows/Arrow-right.png"
+            className={`${styles.arrowRight} ${styles.arrow}`}
+            src={ArrowRight}
             alt="Flèche droite"
           />
         </>
       )}
-      <img src={images[currentImageIndex]} alt={`Slide ${currentImageIndex + 1}`} />
     </div>
   );
 };

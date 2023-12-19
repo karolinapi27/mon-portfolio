@@ -47,11 +47,13 @@
   }
 
 
-  /* Pour les écrans mobiles */
-@media only screen and (max-width: 768px) {
+  /* Pour les écrans mobiles et tablettes */
+@media only screen and (max-width: 1024px) {
 
   .cardContainer {
     @include responsiveMargins;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: $secondary-color;
     padding: 0;
   }
@@ -59,4 +61,9 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .cardItem img {
+    height: 255px;
+    flex-shrink: 0;
+}
 }
