@@ -3,7 +3,7 @@
 
 .error-container {
     display: grid;
-    gap: 136px;  
+    gap: 100px;  
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 @media only screen and (max-width: 768px) {
 
     .error-container {
-        gap: 90px;  
+        gap: 50px;  
     }
 
     h1 {

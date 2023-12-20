@@ -6,14 +6,13 @@
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
-    padding-top: 15px;
     gap: 5px;
 
     .filled {
-        color: $primary-color; 
+        color: $primary-color;
     }
-  
+
     .empty {
-        color: #e3e3e3; 
+        color: #e3e3e3;
     }
 }

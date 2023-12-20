@@ -37,10 +37,9 @@
     @include custom-font;
     color: $secondary-color;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    }
+    bottom: 10px;
+    left: 10px;
+  }
 
   a {
     text-decoration: none;

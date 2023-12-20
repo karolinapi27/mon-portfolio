@@ -3,6 +3,7 @@
 @import '../../Styles/variables';
 
 .Collapse-Container {
+    @include pageMargins;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +16,7 @@
 @media only screen and (max-width: 768px) {
 
     .Collapse-Container {
+        @include responsiveMargins;
         margin-top: 20px;
         margin-bottom: 20px;
         gap: 19px; 

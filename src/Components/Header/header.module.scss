@@ -64,6 +64,7 @@
         @include responsiveMargins;
         margin-top: 20px;
         margin-bottom: 20px;
+        gap: 5px;
     
         & .logo {
             max-width: 145px;
@@ -73,7 +74,9 @@
 
         & ul {
             margin-top: 20px;
-            gap: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
 
             & li a {
                 font-size: 12px;

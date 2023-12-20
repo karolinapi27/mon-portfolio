@@ -1,103 +1,129 @@
 @import '../../Styles/mixins';
 @import '../../Styles/variables';
 
-    .containerMargin {
-        @include pageMargins;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
+.containerMargin {
+  @include pageMargins;
+}
 
-    .title {
-        font-size: 36px;
-        font-weight: 500;
-        text-align: left;
-        line-height: 142.6%;
-    }
+.container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
 
-    .location {
-        color: $primary-color;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 142.6%; 
-        margin-bottom: 10px;
-    }
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 142.6%;
+}
 
-    .tags {
-        width: 115px;
-        height: 25px;
-        padding: 8px;
-        font-size: 14px;
-        text-align: center;
-        margin-right: 5px;
-        border-radius: $radius10;
-        background-color: $primary-color;
-        color: white;
-        flex-wrap: wrap;
-    }
+.location {
+  color: $primary-color;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-bottom: 10px;
+}
 
-    .hostNameFlex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
+.tags {
+  width: 115px;
+  height: 25px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: $radius10;
+  background-color: $primary-color;
+  color: white;
+  flex-wrap: wrap;
+}
 
-    .CollapsePositionFlex {
-        display: flex;
-        gap:50px;
-        margin-bottom: 30px;
-    }
+.hostContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 
-    .picture {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+.hostDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.hostName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.CollapsePositionFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hostDetails {
+  gap: 10px;
+}
 
 
-    /* Pour les écrans mobiles et tablettes */
+/* Pour les écrans mobiles et tablettes */
 
-    @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 
-        .containerMargin {
-            @include responsiveMargins;
-        }
+  .picture {
+    width: 32px;
+    height: 32px;
+  }
 
-        .CollapsePositionFlex {
-            flex-wrap: wrap;
-            gap: 0;
-        }
+  .containerMargin {
+    @include responsiveMargins;
+  }
 
-        .title {
-            font-size: 18px;
-            margin-top: 0;   
-        }
+  .CollapsePositionFlex {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-        .location {
-            
-            font-size: 14px;
-        }
+  .title {
+    font-size: 18px;
+    margin-top: 0;
+  }
 
-        .picture {
-            width: 32px;
-            height: 32px;
-        }
+  .location {
+    font-size: 14px;
+  }
 
-        .tags {
-            font-size: 10px; 
-        }
+  .tags {
+    font-size: 10px;
+  }
 
-        .hostContainer {
-            display: block;
-        }
-
-        .hostNameFlex {
-            font-size: 12px; 
-        }
-    }
+  .hostDetails {
+    font-size: 12px;
+  }
+  .hostContainer {
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+}

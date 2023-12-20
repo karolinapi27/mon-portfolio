@@ -6,7 +6,6 @@ import ArrowRight from '../../Assets/Arrows/Arrow-right.png';
 
 
 const Carousel = ({pictures}) => {
-  console.log("Pictures prop:", pictures);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
