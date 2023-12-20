@@ -26,7 +26,7 @@ const Apartment = () => {
           <div className={Styles.containerMargin}>
               <Carousel pictures={pictures} />
 
-            <div>
+          <div>
 
             <div className={Styles.container}>
           <div>
@@ -49,15 +49,21 @@ const Apartment = () => {
           </div>
           </div>
 
-
-          <div className= {Styles.CollapsePositionFlex}>
-            <p className={Styles.description}>
+          <div className={Styles.CollapsePositionFlex}>
+            <div className={Styles.collapseContainer}>
               <Collapse data={{ title: "Description", content: description }} size="small" />
-            </p>
-            <p className={Styles.equipments}>
-              <Collapse data={{ title: "Équipements", content: equipments.map((equipment) => <span key={equipment}>{equipment}</span>) }} size="small" />
-            </p>
+            </div>
+            <div className={Styles.collapseContainer}>
+              <Collapse
+                data={{
+                  title: "Équipements",
+                  content: equipments.map((equipment) => <span key={equipment}>{equipment}</span>),
+                }}
+                size="small"
+              />
+            </div>
           </div>
+
         </div>
     </div>
     );

@@ -41,7 +41,7 @@
     width: 100%;
     overflow: hidden;
     height: 0;
-    transition: height 0.8s ease-in-out, padding 0.8s ease-in-out;
+    transition: height 0.8s linear, padding 0.8s linear;
 
     .collapse-container.active & {
         height: 100%;

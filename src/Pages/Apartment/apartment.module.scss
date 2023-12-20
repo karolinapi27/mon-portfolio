@@ -4,22 +4,22 @@
     .containerMargin {
         @include pageMargins;
     }
-
+    
     .container {
-        background-color: lightgray;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     .title {
         font-size: 36px;
         font-weight: 500;
         text-align: left;
+        line-height: 142.6%;
     }
 
     .location {
-        color: #FF6060;
+        color: $primary-color;
         font-size: 18px;
         font-weight: 500;
         line-height: 142.6%; 
@@ -29,24 +29,27 @@
     .tags {
         width: 115px;
         height: 25px;
-        padding: 5px;
+        padding: 8px;
         font-size: 14px;
         text-align: center;
         margin-right: 5px;
         border-radius: $radius10;
-        background-color:#FF6060;
+        background-color: $primary-color;
         color: white;
         flex-wrap: wrap;
     }
 
     .hostNameFlex {
         display: flex;
-        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         font-size: 18px;
     }
 
     .CollapsePositionFlex {
         display: flex;
+        gap:50px;
         margin-bottom: 30px;
     }
 

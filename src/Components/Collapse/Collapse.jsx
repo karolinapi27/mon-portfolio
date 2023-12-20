@@ -9,7 +9,6 @@ const Collapse = ({ data, size}) => {
 
   const handleToggle = () => {
     setActive(!active);
-    console.log("Active state:", !active);
   };
 
   return (
@@ -22,8 +21,7 @@ const Collapse = ({ data, size}) => {
 
         <div className="collapse-content">
           {data.content}
-        </div>
-        
+        </div>    
     </div>
   );
 };

@@ -3,36 +3,32 @@
 @import '../../Styles/variables';
 
 .bannerContainer {
-    @include pageMargins;
-    border-radius: $radius25;
-    height: 223px;
-    background: #000;
-    mix-blend-mode: darken; 
-    background-position: center;
-    display: flex;        
-    align-items: center; 
-    justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 25px;
+  height: 223px;
+  background: #000;
+  mix-blend-mode: darken;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
-  .bannerText {
-    font-size: 48px;
-    color: $secondary-color;
-    line-height: 142.6%;
-  }
 
-  /* Pour les écrans mobiles */
+.bannerText {
+  font-size: 48px;
+  color: #FFF;
+  line-height: 142.6%;
+}
 
-@media only screen and (max-width: 1024px) {
-
+/* Pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
   .bannerContainer {
-    @include responsiveMargins;
-    height: 111px; 
-    padding: 31px 0 32px 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 111px;
   }
-
   .bannerText {
     font-size: 24px;
-    margin-top: 0;
   }
 }
-  

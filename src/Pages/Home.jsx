@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Banner
-        imageUrl="./Images/imageHomeBannner.png"
+        imageUrl="./Images/imageHomeBanner.png"
         text="Chez vous, partout et ailleurs"
       />
       <Cards/>
