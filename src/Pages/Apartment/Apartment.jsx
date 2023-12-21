@@ -52,16 +52,16 @@ const Apartment = () => {
           </div>
         </div>
         <div className={Styles.CollapsePositionFlex}>
-          
-          <Collapse data={{title: "Description", content: description}} size="small"/>
-         
+          <div className={Styles.CollapseWidth}>
+          <Collapse data={{title: "Description", content: description}} size="small"/></div>
+          <div className={Styles.CollapseWidth}>
           <Collapse
             data={{
               title: "Équipements",
               content: equipments.map((equipment) => <span key={equipment}>{equipment}</span>),
             }}
             size="small"
-          />
+          /></div>
         </div>
       </div>
     </div>
