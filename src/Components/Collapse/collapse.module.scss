@@ -1,8 +1,6 @@
 @import '../../Styles/mixins';
 @import '../../Styles/variables';
 
-
-
 .collapse-container {
     @include collapse-container-styles;
     margin-left: auto;
@@ -72,7 +70,6 @@
     .small {
         grid-column: 1fr;
     }
-
 
 }
 

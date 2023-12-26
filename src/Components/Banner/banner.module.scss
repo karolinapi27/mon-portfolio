@@ -4,9 +4,7 @@
 
 
 .bannerContainer {
-  position: relative;
-  margin-left: 100px;
-  margin-right: 100px;
+  @include pageMargins;
   border-radius: 25px;
   height: 223px;
   background-position: center;
@@ -16,12 +14,10 @@
   background-size: cover;
 }
 
-
 .bannerText {
-  margin-top:0;
+  margin-top: 0;
   font-size: 48px;
-  color: #FFF;
-  line-height: 142.6%; 
+  color: $secondary-color;
 }
 
 /* Pour les écrans mobiles */
@@ -37,6 +33,7 @@
   }
 }
 
+/* Pour les tablettes */
 @media only screen and (max-width: 1024px) {
   .bannerContainer {
     @include responsiveMargins;

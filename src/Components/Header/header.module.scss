@@ -38,7 +38,7 @@
         background-color: $primary-color;
         height: 2px;
         width: 0;
-        border-radius: 10px;
+        border-radius: $radius10;
         bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
@@ -69,7 +69,6 @@
         & .logo {
             max-width: 145px;
             max-height: 46.881px;
-            flex-shrink: 0;
         }
 
         & ul {
@@ -80,7 +79,7 @@
 
             & li a {
                 font-size: 12px;
-                text-transform:uppercase;
+                text-transform: uppercase;
             }
         }
     }
