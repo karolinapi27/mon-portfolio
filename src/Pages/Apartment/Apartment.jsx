@@ -17,8 +17,15 @@ const Apartment = () => {
 
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    if (!apartment) {
+      navigate('./ErrorPage');
+    }
+  }, [apartment, navigate]);
+
+ 
   if (!apartment) {
-    navigate('./ErrorPage');
+    return null; 
   }
 
   const {title, pictures, location, tags, host, rating, description, equipments} = apartment

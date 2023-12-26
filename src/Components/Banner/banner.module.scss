@@ -2,23 +2,26 @@
 @import '../../Styles/mixins';
 @import '../../Styles/variables';
 
+
 .bannerContainer {
+  position: relative;
   margin-left: 100px;
   margin-right: 100px;
   border-radius: 25px;
   height: 223px;
-  background: #000;
-  mix-blend-mode: darken;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  background-size: cover;
 }
 
+
 .bannerText {
+  margin-top:0;
   font-size: 48px;
   color: #FFF;
-  line-height: 142.6%;
+  line-height: 142.6%; 
 }
 
 /* Pour les écrans mobiles */

@@ -5,7 +5,7 @@ import styles from './banner.module.scss';
 
 const Banner = ({ imageUrl, text }) => {
   const bannerStyle = {
-    backgroundImage: `url(${imageUrl})`,
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${imageUrl})`
   };
 
   return (
