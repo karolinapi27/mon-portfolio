@@ -13,7 +13,7 @@ const Card = () => {
         {data.map((item) => (
           <Link key={item.id} to={`/apartment/${item.id}`} className={styles.cardLink}>
             <li id={item.id} className={styles.cardItem}>
-              <img src={item.cover} alt="card" />
+              <img src={item.cover} alt="card"/>
               <h3 className={styles.cardTitle}>{item.title}</h3>
             </li>
           </Link>
