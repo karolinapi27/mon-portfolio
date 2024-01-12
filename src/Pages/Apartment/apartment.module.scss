@@ -29,16 +29,21 @@
 }
 
 .tags {
-  width: 115px;
   height: 25px;
-  padding: 8px;
+  padding: 5px 10px 5px 10px;
   font-size: 14px;
+  font-weight: 500;
+  line-height: 142.6%; 
   text-align: center;
-  margin-right: 5px;
   border-radius: $radius10;
   background-color: $primary-color;
   color: white;
-  flex-wrap: wrap;
+
+}
+
+.tagsPosition {
+  display: flex;
+  gap:10px;
 }
 
 .hostContainer {
@@ -46,6 +51,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500; 
   gap: 10px;
 }
 

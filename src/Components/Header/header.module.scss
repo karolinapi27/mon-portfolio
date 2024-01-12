@@ -22,11 +22,17 @@
 
         & li a {
             font-size: 24px;
+            font-weight: 500;
             color: $primary-color;
             text-decoration: none;
             cursor: pointer;
         }
     }
+}
+nav {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
  .nav-active {
@@ -82,5 +88,9 @@
                 text-transform: uppercase;
             }
         }
+    }
+
+    nav {
+        display: block;
     }
 }

@@ -5,7 +5,9 @@ import styles from './header.module.scss';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src="/logoKasa.svg" alt="Logo Kasa" className={styles.logo} />
+      <NavLink to="/" className={styles.logoLink}>
+        <img src="/logoKasa.svg" alt="Logo Kasa" className={styles.logo} />
+      </NavLink>
       <nav>
         <ul className={styles.navbar}>
           <li><NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" :"")}>Accueil</NavLink></li>

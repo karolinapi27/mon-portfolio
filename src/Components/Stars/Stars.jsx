@@ -2,9 +2,9 @@
   import './stars.module.scss';
 
   const Stars = ({ rating }) => {
-    const roundedRating = Math.round(rating);
+    
     const stars = Array.from({ length: 5 }, (_, index) => (
-      <span key={index} className={index < roundedRating ? 'filled' : 'empty'}>
+      <span key={index} className={index < rating ? 'filled' : 'empty'}>
         &#9733;
       </span>
     ));

@@ -7,7 +7,7 @@ import arrowImage from '../../Assets/Arrows/Arrow-back.svg';
 const Collapse = ({ data, size}) => {
   const [active, setActive] = useState(false);
 
-  const handleToggle = () => {
+  const Toggle = () => {
     setActive(!active);
   };
 
@@ -16,7 +16,7 @@ const Collapse = ({ data, size}) => {
 
         <div className="collapse-title">
           <span>{data.title}</span> 
-          <img className='collapse-icon' src={arrowImage} alt="Arrow" onClick={handleToggle} /> 
+          <img className='collapse-icon' src={arrowImage} alt="Arrow" onClick={Toggle} /> 
         </div>
 
         <div className="collapse-content">
