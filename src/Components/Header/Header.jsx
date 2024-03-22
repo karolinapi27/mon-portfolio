@@ -10,10 +10,10 @@ const Header = () => {
       </NavLink>
       <nav>
         <ul className={styles.navbar}>
-          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>About me </NavLink></li>
-          <li><NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" :"")}>Mes projets</NavLink></li>
-          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>Compétences</NavLink></li>
-          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>Contact</NavLink></li>
+          <li><a href="#about" className={styles.navLink}>About me</a></li>
+          <li><a href="#projets" className={styles.navLink}>Mes projets</a></li>
+          <li><a href="#competences" className={styles.navLink}>Compétences</a></li>
+          <li><a href="#contact" className={styles.navLink}>Contact</a></li>
         </ul>
       </nav>
     </header>

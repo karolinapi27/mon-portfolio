@@ -32,40 +32,11 @@ nav {
     flex-wrap: wrap;
 }
 
- .nav-active {
-    position: relative;
-
-    &::after {
-        content:"";
-        position: absolute;
-        background-color: $primary-color;
-        height: 2px;
-        width: 0;
-        border-radius: $radius10;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-animation: underline 0.2s ease-in-out forwards;
-        animation: underline 0.2s ease-in-out forwards;
-
-        @-webkit-keyframes underline {
-            to {
-                width: 100%;
-            }
-        }
-        @keyframes underline {
-            to {
-                width: 100%;
-            }
-        }    
-}
-}
 
 /* Pour les écrans mobiles */
 @media only screen and (max-width: 768px) {
     .header { 
-        display: grid;
-        text-align: center;
+        flex-direction: column;
     
         & h1 {
             margin: 0;
@@ -75,7 +46,7 @@ nav {
             margin-top: 20px;
             gap: 10px;
             flex-wrap: wrap;
-            justify-content: flex-end;
+            justify-content: center;
 
             & li a {
                 font-size: 12px;

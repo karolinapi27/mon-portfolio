@@ -1,7 +1,8 @@
 .CompetencesContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     margin-bottom: 50px;
 }
 
@@ -11,9 +12,9 @@
    
 }
 
-h2 {
+.CompetencesTitle {
     font-size: 30px;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }

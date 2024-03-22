@@ -7,15 +7,24 @@ import Compétences from '../Components/Compétences/Compétences'
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Banner
         imageUrl="./Images/banner.png"
         name="Karolina Pietrzykowska"
         title="Développeuse Web"
       />
-      <AboutMe/>
-      <Cards/>
-      <Compétences/>
+      <div id="about">
+        <AboutMe/>
+      </div>
+      <div id="projets">
+        <Cards/>
+      </div>
+      <div id="competences">
+        <Compétences/>
+      </div>
+      <div id="contact">
+       
+      </div>
     </div>
   );
 };

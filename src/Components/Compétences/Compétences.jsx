@@ -5,7 +5,7 @@ import styles from "./compétences.module.scss";
 const Competences = () => {
   return (
     <div>
-      <h2>Mes Compétences</h2>
+      <h2 className={styles.CompetencesTitle}>Mes Compétences</h2>
       <div className={styles.CompetencesContainer}>
         {competence.map((competence) => (
           <div key={competence.nom}>

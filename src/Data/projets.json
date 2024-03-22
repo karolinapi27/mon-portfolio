@@ -2,27 +2,30 @@
 	{
 	  "id": "booki",
 	  "title": "Booki",
-	  "description": "Un site de réservation d'hôtels simple et intuitif, offrant une sélection de logements pour toutes les envies.",
+	  "description": "Booki est une entreprise qui souhaite développer un site permettant à ses utilisateurs de trouver des hébergements et des activités dans la ville de leur choix.\nJe suis en alternance en tant que développeuse web dans l’entreprise.\nPour ce projet, je suis chargée d’intégrer l’interface du site avec du code HTML et CSS.\nJe travaille en collaboration avec Sarah, la CTO, et Loïc, l’UI designer.\nPour démarrer le projet, je dispose des maquettes pour les formats mobile, tablette et desktop, disponibles sur Figma.\nMais aussi d’une base de code, des images du site et d’une note de synthèse avec l’ensemble des points fonctionnels et techniques à prendre en compte pour le développement du site."
+	  ,
 	  "githubLink": "https://github.com/karolinapi27/Booki/tree/master",
-	  "cover": "chemin/vers/ton/image/de/couverture/booki.png",
+	  "cover": "/Images/ProjetsCover/booki.webp",
 	  "technologies": ["HTML", "CSS"],
 	  "demoLink": ""
 	},
 	{
 	  "id": "ohmyfood",
 	  "title": "Ohmyfood",
-	  "description": "Un site web qui permet aux utilisateurs de commander à l'avance des menus de restaurants pour réduire leur temps d'attente.",
+	  "description":"Ohmyfood est une entreprise de commande de repas en ligne. Elle permet aux utilisateurs de composer leur propre menu de restaurants gastronomiques.\n\nPour ce projet, il s’agit de développer un site “mobile first” proposant le menu de 4 grands restaurants parisiens. Le site contiendra donc 4 menus dans un premier temps.\n\nPour réaliser ce projet, j’ai à ma disposition les maquettes mobile et desktop du site que L’UX designer a finalisé, ainsi que le dossier des sources du site (images et textes), et le prototype du site via Figma, incluant les animations et comportements à intégrer.",
+
 	  "githubLink": "https://github.com/karolinapi27/Ohmyfood/",
-	  "cover": "chemin/vers/ton/image/de/couverture/ohmyfood.png",
+	  "cover": "/Images/ProjetsCover/ohmyFood.webp",
 	  "technologies": ["HTML", "CSS", "Sass"],
 	  "demoLink": "https://karolinapi27.github.io/Ohmyfood/"
 	},
 	{
 	  "id": "printitjs",
 	  "title": "Print-it JS",
-	  "description": "Une bibliothèque JavaScript pour faciliter l'impression de contenus spécifiques de pages web.",
+	  "description": "Pour ce projet, il s’agit de dynamiser le site internet statique d’une petite imprimerie familiale nommée Print it.\nJe dispose d’une page avec aucun élément dynamique, et je dois remplacer la bannière par un carrousel pour que l’on puisse voir différentes images défiler.\nLe développeur précédent a déjà fait le CSS, il me restera à modifier le HTML et le Javascript pour réaliser le résultat attendu.\nJe dispose des bases du projet sur Github."
+	  ,
 	  "githubLink": "https://github.com/karolinapi27/Print-it-JS",
-	  "cover": "chemin/vers/ton/image/de/couverture/printitjs.png",
+	  "cover": "/Images/ProjetsCover/printit.webp",
 	  "technologies": ["JavaScript"],
 	  "demoLink": ""
 	}

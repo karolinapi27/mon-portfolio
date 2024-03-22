@@ -9,10 +9,10 @@ const Card = () => {
 
   return (
     <div className={styles.cardContainer}>
-      <h3>MES PROJETS</h3>
+      <h2 className={styles.cardtitle}>MES PROJETS</h2>
       <ul className={styles.cardGrid}>
         {data.map((item) => (
-          <Link key={item.id} to={`/apartment/${item.id}`} className={styles.cardLink}>
+          <Link key={item.id} to={`/projet/${item.id}`} className={styles.cardLink}>
             <li id={item.id} className={styles.cardItem}>
               <img src={item.cover} alt="card"/>
               <h3 className={styles.cardTitle}>{item.title}</h3>

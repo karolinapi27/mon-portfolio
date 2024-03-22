@@ -3,10 +3,12 @@
 import React from 'react';
 import styles from './banner.module.scss';
 
-const Banner = ({ imageUrl, name, title }) => {
+const Banner = ({ imageUrl, name, title, customStyle }) => {
   const bannerStyle = {
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${imageUrl})`
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${imageUrl})`,
+    ...customStyle 
   };
+
 
   return (
     <div className={styles.bannerContainer} style={bannerStyle}>
