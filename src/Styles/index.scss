@@ -1,9 +1,9 @@
 // Index.scss //
 @import 'mixins';
 @import 'variables';
-@import '../components/Banner/banner.module';
-@import '../components/Header/header.module';
-@import '../components/Footer/footer.module';
+@import '../components/Banner/banner.module.scss';
+@import '../components/Header/header.module.scss';
+@import '../components/Footer/footer.module.scss';
 @import '../Components/Collapse/collapse.module.scss';
 @import '../Components/Slideshow/slideshow.module.scss';
 @import '../Pages/ProjetsDetails/projets.details.module.scss';
@@ -20,6 +20,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  background-color: #282828;
   font-style: normal;
 }
