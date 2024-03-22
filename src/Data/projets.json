@@ -1,0 +1,30 @@
+[
+	{
+	  "id": "booki",
+	  "title": "Booki",
+	  "description": "Un site de réservation d'hôtels simple et intuitif, offrant une sélection de logements pour toutes les envies.",
+	  "githubLink": "https://github.com/karolinapi27/Booki/tree/master",
+	  "cover": "chemin/vers/ton/image/de/couverture/booki.png",
+	  "technologies": ["HTML", "CSS"],
+	  "demoLink": ""
+	},
+	{
+	  "id": "ohmyfood",
+	  "title": "Ohmyfood",
+	  "description": "Un site web qui permet aux utilisateurs de commander à l'avance des menus de restaurants pour réduire leur temps d'attente.",
+	  "githubLink": "https://github.com/karolinapi27/Ohmyfood/",
+	  "cover": "chemin/vers/ton/image/de/couverture/ohmyfood.png",
+	  "technologies": ["HTML", "CSS", "Sass"],
+	  "demoLink": "https://karolinapi27.github.io/Ohmyfood/"
+	},
+	{
+	  "id": "printitjs",
+	  "title": "Print-it JS",
+	  "description": "Une bibliothèque JavaScript pour faciliter l'impression de contenus spécifiques de pages web.",
+	  "githubLink": "https://github.com/karolinapi27/Print-it-JS",
+	  "cover": "chemin/vers/ton/image/de/couverture/printitjs.png",
+	  "technologies": ["JavaScript"],
+	  "demoLink": ""
+	}
+  ]
+  

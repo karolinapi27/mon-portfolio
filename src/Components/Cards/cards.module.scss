@@ -3,12 +3,9 @@
 @import '../../Styles/variables';
 
 .cardContainer {
-    @include pageMargins;
-    border-radius: $radius25;
     background-color: $grey-background;
     padding: 56px 50px;
     margin-top: 50px;
-    margin-bottom: 50px;
   }
   
   .cardGrid {
@@ -54,6 +51,12 @@
 
   a {
     text-decoration: none;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
   }
 
   /* Pour les écrans mobiles et tablettes */

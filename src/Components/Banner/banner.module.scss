@@ -4,38 +4,43 @@
 
 
 .bannerContainer {
-  @include pageMargins;
-  border-radius: 25px;
-  height: 223px;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+  height: 600px;
   background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bannerText {
+.bannerName {
   margin-top: 0;
   font-size: 48px;
+  font-weight: 500;
   color: $secondary-color;
+}
+
+.bannerTitle {
+  font-size: 35px;
 }
 
 /* Pour les écrans mobiles */
 @media only screen and (max-width: 768px) {
   .bannerContainer {
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 111px;
+    height: 200px;
   }
-  .bannerText {
-    font-size: 24px;
+  .bannerName {
+    font-size: 25px;
     padding-left: 10px;
+  }
+  .bannerTitle {
+    font-size: 20px;
   }
 }
 
 /* Pour les tablettes */
 @media only screen and (max-width: 1024px) {
   .bannerContainer {
-    @include responsiveMargins;
+   
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Logements from '../../Data/logements.json';
+import projets from '../../Data/projets.json';
 import Styles from './apartment.module.scss';
 import Carousel from '../../Components/Slideshow/Slideshow';
 import Collapse from '../../Components/Collapse/Collapse';
@@ -11,7 +11,7 @@ import Stars from '../../Components/Stars/Stars';
 const Apartment = () => {
 
   const {id} = useParams()
-  const data = Logements
+  const data = projets
 
   const apartment = data.find(item => item.id === id)
 

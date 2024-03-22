@@ -5,13 +5,15 @@ import styles from './header.module.scss';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <NavLink to="/" className={styles.logoLink}>
-        <img src="/logoKasa.svg" alt="Logo Kasa" className={styles.logo} />
+      <NavLink to="/">
+        <h1>Portfolio</h1>
       </NavLink>
       <nav>
         <ul className={styles.navbar}>
-          <li><NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" :"")}>Accueil</NavLink></li>
-          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>A Propos</NavLink></li>
+          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>About me </NavLink></li>
+          <li><NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" :"")}>Mes projets</NavLink></li>
+          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>Compétences</NavLink></li>
+          <li><NavLink to="/about"className={(nav) => (nav.isActive ? "nav-active" :"")}>Contact</NavLink></li>
         </ul>
       </nav>
     </header>

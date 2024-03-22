@@ -3,25 +3,22 @@
 @import '../../Styles/variables';
 
 .header {
-    @include pageMargins;
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
-    margin-bottom: 50px;
+    margin: 30px 20px 30px 20px;
 
-    & .logo {
-        width: 210.322px;
-        height: 68px;
-        flex-shrink: 0;
+    & h1 {
+        font-size: 35px;
+        color: white;
     }
 
     & ul {
         display: flex;
-        gap: 57px;
+        gap: 30px;
         list-style: none;
 
         & li a {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 500;
             color: $primary-color;
             text-decoration: none;
@@ -66,15 +63,12 @@ nav {
 
 /* Pour les écrans mobiles */
 @media only screen and (max-width: 768px) {
-    .header {
-        @include responsiveMargins;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        gap: 5px;
+    .header { 
+        display: grid;
+        text-align: center;
     
-        & .logo {
-            max-width: 145px;
-            max-height: 46.881px;
+        & h1 {
+            margin: 0;
         }
 
         & ul {

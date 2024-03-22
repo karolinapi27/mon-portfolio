@@ -1,14 +1,15 @@
 //  Card //
 import React from 'react';
 import { Link } from 'react-router-dom';
-import  Logements  from '../../Data/logements.json';
+import  projets  from '../../Data/projets.json';
 import styles from './cards.module.scss';
 
 const Card = () => {
-  const data = Logements;
+  const data = projets;
 
   return (
     <div className={styles.cardContainer}>
+      <h3>MES PROJETS</h3>
       <ul className={styles.cardGrid}>
         {data.map((item) => (
           <Link key={item.id} to={`/apartment/${item.id}`} className={styles.cardLink}>

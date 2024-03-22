@@ -1,0 +1,34 @@
+[
+  {
+    "nom": "HTML",
+    "logo": "./Logos/html.svg"
+  },
+  {
+    "nom": "CSS",
+    "logo": "./Logos/css.svg"
+  },
+  {
+    "nom": "JavaScript",
+    "logo": "./Logos/javascript.svg"
+  },
+  {
+    "nom": "React",
+    "logo": "./Logos/react.svg"
+  },
+  {
+    "nom": "Redux",
+    "logo": "./Logos/redux.svg"
+  },
+  {
+    "nom": "Sass",
+    "logo": "./Logos/sass.svg"
+  },
+  {
+    "nom": "Figma",
+    "logo": "./Logos/figma.svg"
+  },
+  {
+    "nom": "Github",
+    "logo": "./Logos/github.svg"
+  }
+]
