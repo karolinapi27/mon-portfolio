@@ -17,7 +17,7 @@
         gap: 30px;
         list-style: none;
 
-        & li a {
+        & li {
             font-size: 18px;
             font-weight: 600;
             color: #5D3B76;
@@ -28,7 +28,7 @@
 
     }
 }
-a:hover {
+li:hover {
     background: linear-gradient(90deg, #f598a8, #f6edb2);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
