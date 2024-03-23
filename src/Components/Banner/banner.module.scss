@@ -17,13 +17,14 @@
   margin-top: 0;
   font-size: 48px;
   font-weight: 700;
-  color: $secondary-color;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .bannerTitle {
   font-size: 35px;
+  color: white
 }
-
 /* Pour les écrans mobiles */
 @media only screen and (max-width: 768px) {
   .bannerContainer {

@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div id="home">
       <Banner
-        imageUrl="./Images/banner.png"
+        imageUrl="./Images/beachBanner.webp"
         name="Karolina Pietrzykowska"
         title="Développeuse Web"
       />
