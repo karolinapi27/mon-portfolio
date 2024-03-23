@@ -10,7 +10,11 @@
 @import '../Pages/ErrorPage/errorpage.module.scss';
 @import '../Pages/About/about.module.scss';
 @import '../Components/Stars/stars.module.scss';
+@import '../Components/Button/button.module.scss';
 
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;

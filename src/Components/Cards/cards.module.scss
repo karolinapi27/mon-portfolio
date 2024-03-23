@@ -6,6 +6,7 @@
     background-color: $grey-background;
     padding: 56px 50px;
     margin-top: 50px;
+    border-radius: 10px;
   }
   
   .cardGrid {
@@ -47,6 +48,7 @@
     bottom: 5px;
     left: 20px;
     z-index: 1;
+    padding-top: 10px;
   }
 
   a {
@@ -67,7 +69,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: $secondary-color;
-    padding: 0;
+    padding: 10px;
   }
   .cardGrid {
     grid-template-columns: 1fr;
@@ -78,5 +80,11 @@
   }
   .cardItem img {
     height: 255px;
+}
+
+.cardtitle {
+  text-align: left;
+  padding-top: 10px;
+  
 }
 }

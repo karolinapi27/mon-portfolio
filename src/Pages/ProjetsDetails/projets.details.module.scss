@@ -64,10 +64,14 @@ h4 {
   margin-bottom: 10px;
 }
 
+.buttonPosition {
+ display: flex;
+ justify-content: center;
+}
 
 /* Pour les écrans mobiles et tablettes */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .container {
     display: flex;
     gap: 20px;

@@ -10,7 +10,7 @@ const Competences = () => {
         {competence.map((competence) => (
           <div key={competence.nom}>
             <img src={process.env.PUBLIC_URL + competence.logo} alt={competence.nom} className={styles.logo} />
-            <p>{competence.nom}</p>
+            <p className={styles.logoName}>{competence.nom}</p>
           </div>
         ))}
       </div>
