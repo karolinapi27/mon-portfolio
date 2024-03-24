@@ -74,6 +74,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
-# kasa
-Projet 8 : kasa
->>>>>>> 60b7019221ae0def168008df6ce4a3fab8f08f27

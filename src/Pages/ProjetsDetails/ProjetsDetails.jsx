@@ -25,7 +25,6 @@ const Projet = () => {
     window.open(demoLink, '_blank');
   };
 
-
   return (
     <div className={Styles.containerMargin}>
 
