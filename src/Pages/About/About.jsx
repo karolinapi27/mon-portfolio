@@ -2,7 +2,6 @@
 import React from 'react';
 import Banner from '../../Components/Banner/Banner'; 
 import Collapse from '../../Components/Collapse/Collapse';
-import items from '../../Data/items.json';
 import './about.module.scss';
 
 const About = () => {
